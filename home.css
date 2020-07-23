@@ -1,0 +1,379 @@
+.brighten-clickable:hover{
+    cursor: pointer;
+    filter: brightness(1.25);
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: .92em;
+    margin: 0px;
+}
+nav {
+    z-index: 100;
+    position:sticky;
+    top:0;
+    background-color: black;
+    color: white;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    border-left-width: 500px;
+    padding: 0 10%;
+    margin-bottom: 20px;
+}
+nav a:hover {
+    color:gray;
+    cursor: pointer;
+}
+
+body>div.content{
+    padding: 0 10%;
+    display: grid;
+    grid-template-columns: 15% auto 83%;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 250px 20px auto;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.main-advertisement{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center;
+    background-color: #808080c4;
+}
+
+.side-advertisement {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.memes {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+div .memes a {
+    background-color: rgb(241,241,241);
+    padding: 8px;
+}
+
+div .memes a:hover {
+    cursor: pointer;
+    filter: brightness(85%);
+}
+
+nav .right {
+    display: inline-flex;
+    align-items: center;
+}
+.button{
+    padding: 6px 12px;
+    background-color: rgba(162, 143, 236, 0.938);
+    color: white;
+    text-align: center;
+    border-radius: 2px;
+    font-weight: 650;
+}
+
+nav .right {
+    color: gray;
+}
+
+nav .right .material-icons.moon:hover{
+    color: yellow;
+    cursor: pointer;
+}
+
+nav .right .material-icons.search:hover{
+    color: white;
+    cursor: pointer;
+}
+
+nav span.left a {
+    margin-right: 8px;
+}
+
+.right span, .right a{
+    margin-left: 8px;
+}
+
+.right .button{
+    margin: 8px 0px 8px 8px;
+
+}
+
+
+.sidebar {
+    position: fixed;
+    overflow-y: scroll;
+    width: 100%;
+    height: 100%;
+}
+.sidebar div{ 
+    display: flex;
+    width: 175px;
+    height: 35px;
+    padding: 3px;
+
+}
+
+.sidebar div a {
+    padding-top: 5px;
+}
+
+.sidebar p {
+    font-size:.75em;
+    font-weight: bold;
+    color: #808080b5;
+}
+.sidebar div img{
+    width: 24px;
+    height: 24px;
+    border-radius: 2px;
+}
+
+.sidebar div:first-child{
+    background-color: #8080801c;
+}
+
+.sidebar div:hover{
+    background-color: #8080801c;
+    cursor: pointer;
+}
+
+.sidebar div.footer {
+    display: block;
+    font-size: .80em;
+    color: #808080b5;
+}
+
+.sidebar div.footer p {
+    display: block;
+    font-size: inherit;
+    font-weight: inherit;
+    color: #808080b5;
+}
+.sidebar div.footer a{
+   margin-right: 1px;
+}
+
+.sidebar div.footer a:hover{
+    filter:brightness(75%);
+    cursor:pointer
+ }
+
+.sidebar div.footer {
+    background-color: transparent;
+    cursor: text;
+}
+
+.trending-meme-tag{
+    margin-bottom: 20px;
+}
+
+
+div .memes .meme{
+    width: 500px;
+}
+div .memes .meme .category{
+    margin-bottom: 2px;
+    color: lightgray;
+}
+
+div .memes .meme .category img{
+    width: 20px;
+    height: 20px;
+}
+
+div .memes .meme .title{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+div .memes .meme .title:hover{
+    cursor: pointer;
+    color: #8a2be2a8;
+}
+
+div .memes .meme .content img, div .memes .meme .content video {
+    width: 100%;
+}
+div .memes video {
+    margin-top: 20px;
+    width: 500px;
+}
+
+div .memes .meme .content:hover{
+    cursor: pointer;
+}
+
+div .memes .meme .statistics{
+    color: lightgray;
+}
+
+div .memes .meme .reaction .border{
+    width: 30px;
+    height: 30px;
+    border-width: 1px;
+    border-color: lightgray;
+    border-style: solid;
+    padding: 0px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 4px;
+    
+}
+
+div .memes .meme .reaction {
+    display:flex;
+    width: inherit;
+    justify-content: space-between;
+}
+div .memes .meme .reaction .left{
+    display:flex;
+}
+
+div .memes .meme .reaction .border:hover{
+    border-color: darkgray;
+    cursor: pointer;
+}
+
+div .memes .meme .reaction .upvote, div .memes .meme .reaction .downvote, div .memes .meme .reaction .comment{
+    width: 30px;
+    height: 30px;
+    background-color: gray;
+}
+
+div .memes .meme .reaction .upvote{
+    clip-path: polygon(50% 20%, 90% 50%, 65% 50%, 65% 80%, 35% 80%, 35% 50%, 10% 50%);
+}
+
+div .memes .meme .reaction .downvote{
+    clip-path: polygon(50% 80%, 90% 50%, 65% 50%, 65% 20%, 35% 20%, 35% 50%, 10% 50%);
+}
+
+div .memes .meme .reaction .comment{
+    clip-path: polygon(15% 24%, 85% 25%, 85% 75%, 45% 75%, 30% 90%, 30% 75%, 15% 75%);
+}
+
+
+div .memes .meme .reaction .ellipsis{
+    display: inline-block;
+    height: 5px;
+    width: 5px;
+    border-radius: 100%;
+    background-color: gray;
+    margin: 0 1px;
+
+}
+
+div .memes .meme .reaction li div{
+    color:white;
+    padding-left: 30px;
+    width: 80px;
+    height: 18px;
+    border-width: 8.5px 6px 7px;
+    border-style: solid;
+    border-radius: 2px;
+    font-weight: bold;
+    margin-left: 4px;
+}
+
+div .memes .meme .reaction .facebook {  
+    border-color:rgb(58,85,159);
+    background: left/20px 20px no-repeat url('./icon/facebook.png'),
+     linear-gradient(to right, white, white 15%, rgb(58,85,159) 15%);
+}
+
+div .memes .meme .reaction .pinterest {  
+    border-color:rgb(201,53,61);
+    background: left/20px 20px no-repeat url('./icon/pinterest.png'),
+     linear-gradient(to right, white, white 15%, rgb(201,53,61) 15%);
+}
+
+div .memes .meme .reaction ul {
+    list-style-type: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    display: flex;
+    padding-inline-start: 0px;
+}
+
+div .memes .meme .reaction .left {
+    display: flex;
+}
+
+hr {
+    margin: 20px 0px;
+    opacity: 0.5;
+    color: black;
+    border-width: 1px;
+}
+
+.side-advertisement > img {
+    margin-bottom: 15px;
+}
+
+.side-advertisement > img:hover{
+    cursor: pointer;
+}
+
+.side-advertisement .advertisement-with-caption:hover{
+    color:blue;
+    cursor: pointer;
+}
+.side-advertisement .advertisement-with-caption{
+    margin-bottom: 15px;
+}
+.side-advertisement .advertisement-with-caption p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.download-app div{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.download-app span{
+    font-size: .75em;
+    font-weight: bold;
+    color: #808080b5;
+    
+}
+
+.download-app div div{
+    display: inline-block;
+    width: 150px;
+    height: 45px;
+    background-color: black;
+}
+
+.download-app div div:hover{
+    cursor: pointer;
+}
+
+.download-app .app-store{
+    background-repeat: no-repeat;
+    background-image: url(icon/appstore-icon-alt-145.png);
+}
+
+.download-app .google-play{
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-image: url(icon/appstore-icon-alt-145.png);
+}
