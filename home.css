@@ -171,9 +171,11 @@ nav span.left a {
     font-size: inherit;
     font-weight: inherit;
     color: var(--subtitle-color);
+    margin-bottom: 100px;
 }
 .sidebar div.footer a{
    margin-right: 1px;
+
 }
 
 .sidebar div.footer a:hover{
