@@ -1,3 +1,7 @@
+:root {
+    --subtitle-color:#808080b5;
+}
+
 .brighten-clickable:hover{
     cursor: pointer;
     filter: brightness(1.25);
@@ -8,6 +12,11 @@ body{
     font-size: .92em;
     margin: 0px;
 }
+
+nav, body>div.content{
+    padding: 0 10%;
+}
+
 nav {
     z-index: 100;
     position:sticky;
@@ -19,16 +28,11 @@ nav {
     align-items: center;
     height: 50px;
     border-left-width: 500px;
-    padding: 0 10%;
     margin-bottom: 20px;
 }
 nav a:hover {
     color:gray;
     cursor: pointer;
-}
-
-body>div.content{
-    padding: 0 10%;
 }
 
 .main {
@@ -103,7 +107,6 @@ nav span.left a {
 
 .right .button{
     margin: 8px 0px 8px 8px;
-
 }
 
 
@@ -123,17 +126,29 @@ nav span.left a {
 
 .sidebar div a {
     padding-top: 5px;
+    position: relative;
+    top: 5.5px;
 }
 
 .sidebar p {
     font-size:.75em;
     font-weight: bold;
-    color: #808080b5;
+    color: var(--subtitle-color);
 }
-.sidebar div img{
-    width: 24px;
+
+.sidebar div img, .sidebar div span {
+    margin-right: 5px;
+    position: relative;
+    padding: 5.5px 0px;
     height: 24px;
+}
+
+.sidebar div img{
+    
+    width: 24px;
+
     border-radius: 2px;
+ 
 }
 
 .sidebar div:first-child{
@@ -148,14 +163,14 @@ nav span.left a {
 .sidebar div.footer {
     display: block;
     font-size: .80em;
-    color: #808080b5;
+    color: var(--subtitle-color);
 }
 
 .sidebar div.footer p {
     display: block;
     font-size: inherit;
     font-weight: inherit;
-    color: #808080b5;
+    color: var(--subtitle-color);
 }
 .sidebar div.footer a{
    margin-right: 1px;
@@ -341,11 +356,10 @@ hr {
     margin-bottom: 15px;
 }
 
-
 .download-app span{
     font-size: .75em;
     font-weight: bold;
-    color: #808080b5;
+    color: var(--subtitle-color);
     
 }
 
