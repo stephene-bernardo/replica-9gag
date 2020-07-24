@@ -2,6 +2,14 @@
     --subtitle-color:#808080b5;
 }
 
+.wonderful-dot {
+    /* content: "●"; */
+    position: relative;
+    top: -7px;
+    left: -6px;
+    color: yellowgreen;
+}
+
 .brighten-clickable:hover{
     cursor: pointer;
     filter: brightness(1.25);
@@ -70,6 +78,10 @@ div .memes .trending-meme-tag a:hover {
     filter: brightness(85%);
 }
 
+nav div {
+    display: inline-block;
+    margin-right: 12gpx;
+}
 nav .right {
     display: inline-flex;
     align-items: center;
@@ -97,16 +109,16 @@ nav .right .material-icons.search:hover{
     cursor: pointer;
 }
 
-nav span.left a {
-    margin-right: 8px;
+nav span.left>a {
+    margin-right: 12px;
 }
 
 .right span, .right a{
-    margin-left: 8px;
+    margin-left: 12px;
 }
 
 .right .button{
-    margin: 8px 0px 8px 8px;
+    margin: 8px 0px 8px 12px;
 }
 
 
