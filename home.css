@@ -60,12 +60,12 @@ nav a:hover {
     width: 70%;
 }
 
-div .memes a {
+div .memes .trending-meme-tag a {
     background-color: rgb(241,241,241);
     padding: 8px;
 }
 
-div .memes a:hover {
+div .memes .trending-meme-tag a:hover {
     cursor: pointer;
     filter: brightness(85%);
 }
@@ -198,12 +198,23 @@ div .memes .meme{
 }
 div .memes .meme .category{
     margin-bottom: 2px;
-    color: lightgray;
+    color: gray;
+    font-size: 12px;
 }
 
 div .memes .meme .category img{
+    border-radius: 2px;
     width: 20px;
     height: 20px;
+    vertical-align: middle;
+    margin-right: 4px;
+    margin-bottom: 5px;
+
+}
+
+div .memes .meme .category a:hover{
+    cursor: pointer;
+    filter: brightness(.60);
 }
 
 div .memes .meme .title{
