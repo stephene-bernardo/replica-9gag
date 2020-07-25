@@ -2,8 +2,32 @@
     --subtitle-color:#808080b5;
 }
 
+@font-face{
+    font-family: barlow-medium;
+    src: url(fonts/BarlowCondensed-Medium.ttf)
+}
+
+@font-face{
+    font-family: barlow-bold;
+    src: url(fonts/BarlowCondensed-Bold.ttf)
+}
+
+@font-face{
+    font-family: barlow-light;
+    src: url(fonts/BarlowCondensed-Light.ttf)
+}
+
+@font-face{
+    font-family: barlow-regular;
+    src: url(fonts/BarlowCondensed-Regular.ttf)
+}
+
+@font-face{
+    font-family: roboto-regular;
+    src: url(fonts/roboto/Roboto-Regular.ttf)
+}
+
 .wonderful-dot {
-    /* content: "●"; */
     position: relative;
     top: -7px;
     left: -6px;
@@ -16,7 +40,8 @@
 }
 
 body{
-    font-family: 'Roboto', sans-serif;
+    font-weight: 300px;
+    font-family: roboto-regular, barlow-regular,'Roboto', sans-serif;
     font-size: .92em;
     margin: 0px;
 }
@@ -38,6 +63,13 @@ nav {
     border-left-width: 500px;
     margin-bottom: 20px;
 }
+
+nav span.left a.home {
+    font-family: barlow-medium;
+    font-size: 1.75em;
+    margin-right: 24px;
+}
+
 nav a:hover {
     filter: brightness(.60);
     cursor: pointer;
@@ -80,7 +112,8 @@ div .memes .trending-meme-tag a:hover {
 
 nav div {
     display: inline-block;
-    margin-right: 12gpx;
+    margin-right: 12px;
+    vertical-align: middle;
 }
 nav .right {
     display: inline-flex;
@@ -111,10 +144,12 @@ nav .right .material-icons.search:hover{
 
 nav span.left>a {
     margin-right: 12px;
+    vertical-align: middle;
 }
 
 .right span, .right a{
     margin-left: 12px;
+    vertical-align: middle;
 }
 
 .right .button{
@@ -165,6 +200,7 @@ nav span.left>a {
 
 .sidebar div:first-child{
     background-color: #8080801c;
+    font-weight: bold;
 }
 
 .sidebar div:hover{
