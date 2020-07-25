@@ -27,6 +27,15 @@
     src: url(fonts/roboto/Roboto-Regular.ttf)
 }
 
+.star{
+    visibility: hidden;
+    color: gray;
+    font-size: 1.80em;
+    position: absolute; 
+    left: 10%;
+    /* top: -2px; */
+}
+
 .wonderful-dot {
     position: relative;
     top: -7px;
@@ -98,6 +107,7 @@ nav a:hover {
 
 .memes {
     width: 70%;
+    padding-right: 4%;
 }
 
 div .memes .trending-meme-tag a {
@@ -183,7 +193,7 @@ nav span.left>a {
     color: var(--subtitle-color);
 }
 
-.sidebar div img, .sidebar div span {
+.sidebar div img, .sidebar div span.material-icons {
     margin-right: 5px;
     position: relative;
     padding: 5.5px 0px;
@@ -206,6 +216,17 @@ nav span.left>a {
 .sidebar div:hover{
     background-color: #8080801c;
     cursor: pointer;
+}
+
+.sidebar div:hover .star{
+    visibility: visible;;
+}
+
+.sidebar div:hover a{
+    width: 70%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .sidebar div.footer {
