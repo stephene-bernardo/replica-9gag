@@ -288,7 +288,12 @@ div .memes .meme .content:hover{
 }
 
 div .memes .meme .statistics{
-    color: lightgray;
+    color: gray;
+}
+
+div .memes .meme .statistics span:hover{
+    cursor: pointer;
+    filter: brightness(.60);
 }
 
 div .memes .meme .reaction .border{
